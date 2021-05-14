@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Admin Login</title>
 </head>
 
 
@@ -16,19 +16,19 @@
 String userid=request.getParameter("auid");
 String password=request.getParameter("apwd");
 String aname=null;
-out.println("hello");
+//out.println("hello");
 
 try {
 	Connection conn = Provider.getOracleConnection();
 	Statement st=conn.createStatement();
 
 	String id1=null;
-	String uid=null;
-	String upd="sdkjfskd8342857362";
+	String uid="abhishekrathore7";
+	String upd="Rathore@123";
 	
 
 	
-	String sql="select * from admin";
+	String sql="select * from Admin";
 	ResultSet ru=st.executeQuery(sql);
 	while(ru.next())
 	{
