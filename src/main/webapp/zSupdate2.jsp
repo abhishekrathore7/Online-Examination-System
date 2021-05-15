@@ -18,7 +18,7 @@
 
 	
 	
-	int serialno=Integer.parseInt(request.getParameter("serialno"));
+	int serialno=Integer.parseInt(request.getParameter("Serialno"));
 	String userid=request.getParameter("userid");
 	String name=request.getParameter("name");
 	String password=request.getParameter("password");
@@ -33,7 +33,7 @@
 
 
 	
-	String sql="update stdnt set serialno='"+serialno+"',userid='"+userid+"',name='"+name+"',password='"+password+"' where userid='"+olduid+"'";
+	String sql="update student set serialno='"+serialno+"',userid='"+userid+"',name='"+name+"',password='"+password+"' where userid='"+olduid+"'";
 	
 	
 	int status=st.executeUpdate(sql);

@@ -51,7 +51,7 @@
 
 	 Connection conn = Provider.getOracleConnection();
 		Statement st=conn.createStatement();
-	String sql="select * from stdnt";
+	String sql="select * from student";
 	ResultSet rs=st.executeQuery(sql);
 	try{
 		if(rs!=null)
@@ -70,7 +70,7 @@
 				<table>
 				<thead>
   					<tr class="table100-head">
-  					  <th>Sl No.</th>
+  					  <th>SERIAL No.</th>
   					  <th>USER ID</th>
   					   <th>NAME</th>
   					  <th>Update/Delete</th>

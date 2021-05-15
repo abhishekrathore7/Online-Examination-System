@@ -19,7 +19,7 @@ try {
 	
 	Connection conn = Provider.getOracleConnection();
 
-String sql="delete from stdnt where userid=?";
+String sql="delete from student where userid=?";
 PreparedStatement pst=conn.prepareStatement(sql);
 pst.setString(1,userid);
 int status=pst.executeUpdate();

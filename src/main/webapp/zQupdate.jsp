@@ -80,7 +80,7 @@
 						<%=i %>
 					</td>
 					<td><form>
-			 			<input type="text" name="question" value="<%= rs.getString("question")%>">
+			 			<input type="text" name="question" value="<%= rs.getString("Question")%>">
 						
 					</td>
 					<td>
@@ -100,7 +100,7 @@
 						
 					</td>
 					<td>
-			 			<input type="text" name="crctans" value="<%= rs.getString("crctans")%>">
+			 			<input type="text" name="crctans" value="<%= rs.getString("correctcans")%>">
 						
 					</td>
 					<td><input type="submit" value="Modify" formaction="zQupdate2.jsp"><a href="zQdelete.jsp?id=<%=rs.getString("a")%>" > - Delete</a></td>
@@ -115,7 +115,7 @@
 						<%=i %>
 					</td>
 					<td>
-			 			<%=rs.getString("question") %>
+			 			<%=rs.getString("Question") %>
 						
 					</td>
 					<td>
@@ -135,7 +135,7 @@
 						
 					</td>
 					<td>
-			 			<%=rs.getString("crctans") %>
+			 			<%=rs.getString("correctcans") %>
 						
 					</td>
 					<td><a href="zQupdate.jsp?id=<%=rs.getString("a")%>" > - UPDATE</a><br><a href="zQdelete.jsp?id=<%=rs.getString("a")%>" > - Delete</a></td>
@@ -152,7 +152,7 @@
 			%>	</tbody>
 				</table>
 					<hr><center>
-				<input type="button" name="Exit" style="white-space: normal;" value="Add Question" class="btn" onclick="window.location.href='AddQuestion.html';"></th>
+				<input type="button" name="Exit" style="white-space: normal;" value="Save Changes" class="btn" onclick="window.location.href='AddQuestion.html';">
 				<br><br><input type="button" name="Exit"  value="Back" class="btn" onclick="window.location.href='AdminLogin2.jsp';">
 </center>
 			</section>

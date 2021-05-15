@@ -37,7 +37,7 @@ try {
 	     {
 		 uid=id1;
 		upd=ru.getString("password"); 
-		aname=ru.getString("name");
+		aname=ru.getString("userid");
 		session.setAttribute("aname",aname);
 		
 	      }

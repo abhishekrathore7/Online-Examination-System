@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Student Dashboard</title>
 </head>
 <body>
 
@@ -22,12 +22,12 @@ try {
 	Statement st=conn.createStatement();
 
 	String id1=null;
-	String uid=null;
-	String upd="sdkjfskd0";
+	String uid="ab__rathore";
+	String upd="abhi@123";
 	
 
 	
-	String sql="select * from stdnt";
+	String sql="select * from student";
 	ResultSet ru=st.executeQuery(sql);
 	while(ru.next())
 	{

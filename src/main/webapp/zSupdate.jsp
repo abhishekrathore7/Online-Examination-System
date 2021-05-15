@@ -35,7 +35,7 @@
 
 	 Connection conn = Provider.getOracleConnection();
 		Statement st=conn.createStatement();
-	String sql="select * from stdnt";
+	String sql="select * from student";
 	ResultSet rs=st.executeQuery(sql);
 	s=request.getParameter("id");
 	session.setAttribute("olduid", s);

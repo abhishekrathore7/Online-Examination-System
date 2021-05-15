@@ -14,12 +14,12 @@
 	<%
 	
 	
-	String question=request.getParameter("question");
+	String question=request.getParameter("Question");
 	String a=request.getParameter("a");
 	String b=request.getParameter("b");
 	String c=request.getParameter("c");
 	String d=request.getParameter("d");
-	String crctans=request.getParameter("crctans");
+	String crctans=request.getParameter("correctcans");
 	
 	try{
 
@@ -30,7 +30,7 @@
 
 
 	
-	String sql="update que set question='"+question+"',a='"+a+"',b='"+b+"',c='"+c+"',d='"+d+"',crctans='"+crctans+"' where a='"+olda+"'";
+	String sql="update que set question='"+question+"',a='"+a+"',b='"+b+"',c='"+c+"',d='"+d+"',correctcans='"+crctans+"' where a='"+olda+"'";
 	
 	
 	int status=st.executeUpdate(sql);

@@ -61,7 +61,7 @@
 					<table>
 						<thead>
   					<tr class="table100-head">
-  					  <th>Sl No.</th>
+  					  <th>SL No.</th>
   					  <th>QUESTIONS</th>
   					  <th>OPTION A</th>
   					  <th>OPTION B</th>
@@ -79,7 +79,7 @@
 						<%=i %>
 					</td>
 					<td>
-			 			<%=rs.getString("question") %>
+			 			<%=rs.getString("Question") %>
 						
 					</td>
 					<td>
@@ -99,7 +99,7 @@
 						
 					</td>
 					<td>
-			 			<%=rs.getString("crctans") %>
+			 			<%=rs.getString("correctcans") %>
 						
 					</td>
 					<td><a href="zQupdate.jsp?id=<%=rs.getString("a")%>" > - UPDATE</a><br><a href="zQdelete.jsp?id=<%=rs.getString("a")%>" > - Delete</a></td>
@@ -122,7 +122,7 @@
 				<div style="width: 25%" class="container-login100-form-btn">
 						<div class="wrap-login100-form-btn">
 							<div class="login100-form-bgbtn"></div>
-							<button class="login100-form-btn" type="button" name="Exit" style="white-space: normal;" value="Add Question" class="btn" onclick="window.location.href='AddQuestion.html';"></th>
+							<button class="login100-form-btn" type="button" name="Exit" style="white-space: normal;" value="Add Question" class="btn" onclick="window.location.href='AddQuestion.html';">
 								Add Question
 							</button>
 						</div>

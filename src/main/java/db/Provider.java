@@ -12,7 +12,7 @@ public static Connection getOracleConnection()
 	try
 	{
 		Class.forName("com.mysql.jdbc.Driver");
-		conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/OnlineExam?characterEncoding=latin1&useConfigs=maxPerformance","root","Rathore@123");
+		conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/adminlogin?characterEncoding=latin1&useConfigs=maxPerformance","root","Rathore@123");
 	}
     catch(Exception e)
     {

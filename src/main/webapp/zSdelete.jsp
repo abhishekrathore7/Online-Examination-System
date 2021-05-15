@@ -20,7 +20,7 @@
 	 Connection conn = Provider.getOracleConnection();
 		Statement st=conn.createStatement();
 	//out.print();
-	String sql="delete from stdnt where userid='"+request.getParameter("id")+"'";
+	String sql="delete from student where userid='"+request.getParameter("id")+"'";
 	
 	try{
 	int rs=st.executeUpdate(sql);

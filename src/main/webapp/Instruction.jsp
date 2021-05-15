@@ -11,7 +11,7 @@
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <meta charset="ISO-8859-1">
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-<title>Insert title here</title>
+<title>Student Dashboard</title>
 <link rel="stylesheet" type="text/css" href="css/inst.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>

@@ -30,7 +30,7 @@ try
 
 
 
-String sql="select * from stdnt";
+String sql="select * from student";
 ResultSet ru=st.executeQuery(sql);
 while(ru.next())
 {
@@ -53,13 +53,13 @@ if(uid.equals(userid))
 else
    {
 
-String sql1="select count(name) from stdnt";
+String sql1="select count(name) from student";
 ResultSet rc=st.executeQuery(sql1);
 rc.next();
 int count=rc.getInt(1);
 count++;
 
-int i=st.executeUpdate("insert into stdnt values('"+count+"','"+userid+"','"+name+"','"+password+"')");
+int i=st.executeUpdate("insert into student values('"+count+"','"+userid+"','"+name+"','"+password+"')");
 out.println("<h1>Data is successfully inserted!</h1></br>");
 response.sendRedirect("zStable.jsp");
     
