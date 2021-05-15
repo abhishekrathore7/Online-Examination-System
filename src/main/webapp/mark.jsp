@@ -58,7 +58,7 @@
 	
 	%>
 	
-	<sql:setDataSource var="db" driver="oracle.jdbc.OracleDriver" url="jdbc:oracle:thin:@localhost:1521:xe" user="system" password="lit"/>
+	<sql:setDataSource var="db" driver="com.mysql.jdbc.Driver" url="jdbc:mysql://localhost:3306/adminlogin" user="root" password="Rathore@123"/>
 	
 	<sql:query var="rs" dataSource="${db }">
 		select * from counter	
@@ -99,7 +99,7 @@
 					<div style="width: 25%"  class="container-login100-form-btn">
 						<div class="wrap-login100-form-btn">
 							<div class="login100-form-bgbtn"></div>
-							<button class="login100-form-btn"   onclick="window.location.href='home.html'">
+							<button class="login100-form-btn"   onclick="window.location.href='Home.html'">
 								EXIT
 							</button>
 						</div>

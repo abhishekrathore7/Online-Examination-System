@@ -52,7 +52,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Student Login</title>
+	<title>Admin Login</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -131,7 +131,7 @@
 						<div class="container-login100-form-btn">
 							<div class="wrap-login100-form-btn">
 								<div class="login100-form-bgbtn"></div>
-								<button class="login100-form-btn" type="submit" formaction="home.html" value="exit" >
+								<button class="login100-form-btn" type="submit" formaction="Home.html" value="exit" >
 									Exit
 								</button>
 							</div>

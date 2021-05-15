@@ -46,7 +46,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <!--===============================================================================================-->
 <script>
-var deadline = new Date("Nov 28, 2019 11:05:30").getTime(); 
+var deadline = new Date("May 16, 2021 11:05:30").getTime(); 
 var x = setInterval(function() { 
 var now = new Date().getTime(); 
 var t = deadline - now; 
@@ -103,8 +103,8 @@ int count=	rc.getInt(1);
 		
 		if(serial<=count){
 		
-			
-		String sql="select * from que where serialno='"+serial+"'";
+	
+		String sql= "select * from que where `Serial no.` =" +serial;   
 
 		ResultSet rs=st.executeQuery(sql);
 		

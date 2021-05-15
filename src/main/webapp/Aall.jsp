@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Answers</title>
 </head>
 <body>
 
@@ -37,7 +37,7 @@ int count=	rc.getInt(1);
 		{
 		serial=rb.getInt("count");
 		}
-		String sql="select * from que where serialno='"+serial+"'";
+		String sql="select * from que where `Serial no.`="+serial++;
 		ResultSet rs=st.executeQuery(sql);
 		
 		
@@ -46,7 +46,7 @@ int count=	rc.getInt(1);
 		while(rs.next())
 		{
 			
-	String crctans=rs.getString("crctans");
+	String crctans=rs.getString("correctcans");
 	if(ans.equals(crctans))
 	{
 		
