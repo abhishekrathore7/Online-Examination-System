@@ -46,7 +46,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <!--===============================================================================================-->
 <script>
-var deadline = new Date("May 16, 2021 11:05:30").getTime(); 
+var deadline = new Date("May 16, 2021 23:59:59").getTime(); 
 var x = setInterval(function() { 
 var now = new Date().getTime(); 
 var t = deadline - now; 
@@ -104,7 +104,7 @@ int count=	rc.getInt(1);
 		if(serial<=count){
 		
 	
-		String sql= "select * from que where `Serial no.` =" +serial;   
+		String sql= "select * from que where `Serial no.` =" +serial++;   
 
 		ResultSet rs=st.executeQuery(sql);
 		
@@ -149,7 +149,7 @@ int count=	rc.getInt(1);
 					<div class="container-login100-form-btn">
 						<div class="wrap-login100-form-btn">
 							<div class="login100-form-bgbtn"></div>
-							<button class="login100-form-btn" name='p' type='submit' formaction='prev.jsp' value='<< Previous'>
+							<button class="login100-form-btn" name='p' type='submit' formaction='prev.jsp' value='Previous'>
 								Previous
 							</button>
 						</div>
@@ -160,7 +160,7 @@ int count=	rc.getInt(1);
 					<div class="container-login100-form-btn">
 						<div class="wrap-login100-form-btn">
 							<div class="login100-form-bgbtn"></div>
-							<button class="login100-form-btn" name='n' type='submit' formaction='next.jsp' value='Next >>'>
+							<button class="login100-form-btn" name='n' type='submit' formaction='next.jsp' value='Next'>
 								Next
 							</button>
 						</div>

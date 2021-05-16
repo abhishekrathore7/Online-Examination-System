@@ -14,7 +14,7 @@
 <%@page import="java.sql.*,java.io.*" %>
 <%
 String ans=request.getParameter("q");
-int serial=0;
+int serial=1;
 
 
  try {
@@ -34,14 +34,14 @@ int count=	rc.getInt(1);
 		serial=rb.getInt("count");
 		}
 		++serial;
-		String sql5="update qc set count='"+serial+"'";
+		String sql5="update qc set `count`="+serial++;
 		st.execute(sql5);
 		
 		
 		
 		if(serial > count)
 		{
-			String sql2="update qc set count=1";
+			String sql2="update qc set `count`=1";
 			st.executeUpdate(sql2);
 			response.sendRedirect("mark.jsp");	
 		}
